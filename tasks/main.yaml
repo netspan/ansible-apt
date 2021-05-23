@@ -1,0 +1,9 @@
+---
+- name: Installing necessary packages for ansible.buildin.apt*
+  apt:
+    update_cache: true
+    cache_valid_time: "3600"
+    state: present
+    name:
+      - gpg
+      - python3-apt     
